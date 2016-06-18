@@ -1,0 +1,24 @@
+<% @bucket_lists.each do |b| %>
+
+  <% if b.title.present? %>
+    <div class= "title"><%= b.title %></div>
+  <% else %>
+  Item not found
+  <% end %>
+
+  <% if b.subtitle.present? %>
+    <%= link_to b.subtitle, bucket_list_path(b.id) %>
+  <% else %>
+    Item not found
+  <% end %>
+
+  <%= link_to "show", bucket_list_path(b.id) %>
+  <%= link_to "edit", edit_bucket_list_path(b.id) %>
+
+  <!-- b.id - przekazuje idika elementow z listy -->
+  </br>
+
+<% end %>
+
+<%= link_to "add", new_bucket_list_path %>
+<%= link_to "home", root_path %>

@@ -1,0 +1,28 @@
+body {
+  font-family: "Arial";
+  font-weight: light;
+  text-align: left;
+  line-height: 30px;
+  font-size: 18px;
+  color:blue;
+}
+
+a{
+  color: red;
+}
+table {
+  color:blue;
+}
+tfoot {
+  background-color: blue;
+  color: white;
+}
+
+td {
+  border: 2px solid blue;
+  padding: 18px;
+}
+.title{
+  font-family: "Times";
+  font-weight: bold;
+}

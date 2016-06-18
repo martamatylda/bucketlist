@@ -1,0 +1,14 @@
+
+  <% if @bucket_list.title.present? %>
+    <div class="title"><%= @bucket_list.title %></div>
+  <% else %>
+  Item not found
+  <% end %>
+
+  <% if @bucket_list.subtitle.present? %>
+    <%= @bucket_list.subtitle %>
+  <% else %>
+    Item not found
+  <% end %>
+
+  <%= link_to "back", bucket_lists_path %>
